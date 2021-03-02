@@ -101,8 +101,8 @@ def f_approx(x):
 
 def print_list(argument, exact, approx):
     error = math.fabs(exact - approx)
-    print(argument, "                       ", exact, "                              ", approx,
-          "                        ", error)
+   print(argument, "                       ", "{:.16f}".format(exact), "                              ", "{:.16f}".format(approx),
+          "                        ", "{:.16f}".format(error))
 
 
 # Вызов функции main
